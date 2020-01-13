@@ -14,6 +14,7 @@
 		6D85CE1323CCDD59006DC06C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D85CE1123CCDD59006DC06C /* LaunchScreen.storyboard */; };
 		6D85CE2223CCE329006DC06C /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85CE2123CCE329006DC06C /* Setting.swift */; };
 		6D85CE2423CCE48F006DC06C /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85CE2323CCE48F006DC06C /* SettingController.swift */; };
+		6D85CE2823CCEE72006DC06C /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85CE2723CCEE72006DC06C /* SettingTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		6D85CE1423CCDD59006DC06C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D85CE2123CCE329006DC06C /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		6D85CE2323CCE48F006DC06C /* SettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
+		6D85CE2723CCEE72006DC06C /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,6 @@
 		6D85CE0523CCDD56006DC06C /* Settings31 */ = {
 			isa = PBXGroup;
 			children = (
-				6D85CE2023CCDFFC006DC06C /* Views */,
 				6D85CE1F23CCDFF3006DC06C /* ViewControllers */,
 				6D85CE1E23CCDFED006DC06C /* ModelControllers */,
 				6D85CE1D23CCDFE4006DC06C /* Models */,
@@ -107,15 +108,9 @@
 		6D85CE1F23CCDFF3006DC06C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				6D85CE2723CCEE72006DC06C /* SettingTableViewCell.swift */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		6D85CE2023CCDFFC006DC06C /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D85CE2423CCE48F006DC06C /* SettingController.swift in Sources */,
+				6D85CE2823CCEE72006DC06C /* SettingTableViewCell.swift in Sources */,
 				6D85CE0723CCDD56006DC06C /* AppDelegate.swift in Sources */,
 				6D85CE0923CCDD56006DC06C /* SceneDelegate.swift in Sources */,
 				6D85CE2223CCE329006DC06C /* Setting.swift in Sources */,
