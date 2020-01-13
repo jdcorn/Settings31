@@ -8,10 +8,18 @@
 
 import UIKit
 
-class SettingListTableViewController: UITableViewController {
+class SettingListTableViewController: UITableViewController, SettingCellDelegate {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    // Protocol functions
+    func settingSwtichTapped(for cell: SettingTableViewCell) {
+        // Find the index path of the cell that was passed in to the function
+        guard let indexPath = tableView.indexPath(for: cell) else { return }
+        // Using that indexPath, we find the setting for that cell
+        let setting = SettingController.shared.settings[indexPath.row]
+        // toggle the isOn property for that setting
+        SettingController.shared.toggleIsOn(for: setting)
+        // update the cell views
+        cell.updateViews(with: setting)
     }
 
     // MARK: - Table view data source
@@ -24,7 +32,8 @@ class SettingListTableViewController: UITableViewController {
         
         let setting = SettingController.shared.settings[indexPath.row]
         cell.updateViews(with: setting)
-
+        cell.cellDelegate = self
+        
         return cell
     }
     
